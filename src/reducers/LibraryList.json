@@ -21,13 +21,13 @@
     "id": 3,
     "title": "React-Redux",
     "description":
-      "React-Redux is the official set of bindings between the React and Redux libraries. With this library you can keep your views and data in sync."
+      "React-Redux is the official set of bindings between the React and Redux libraries.  With this library you can keep your views and data in sync."
   },
   {
     "id": 4,
     "title": "Lodash",
     "description":
-      "A modern JavaScript utility library delivering modularity, performance, & extras. Lodash is released under the MIT license & supports modern environments."
+      "A modern JavaScript utility library delivering modularity, performance, & extras.  Lodash is released under the MIT license & supports modern environments."
   },
   {
     "id": 5,
@@ -39,7 +39,7 @@
     "id": 6,
     "title": "ESLint",
     "description":
-      "ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn't adhere to certain style guidelines."
+      "ESLint is an open source JavaScript linting utility originally created by Nicholas C. Zakas in June 2013. Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines."
   },
   {
     "id": 7,
@@ -51,6 +51,6 @@
     "id": 8,
     "title": "Axios",
     "description":
-      "Promise based HTTP client for the browser and node.js. With Axios, you can make XMLHttpRequests from the browser or Node with the full Promise Api."
+      "Promise based HTTP client for the browser and node.js.  With Axios, you can make XMLHttpRequests from the browser or Node with the full Promise Api."
   }
 ]
