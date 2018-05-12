@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 
 class LibraryList extends Component {
   render() {
-    // console.log(this.props);
+    console.log(this.props);
     return;
   }
 }
 
 const mapStateToProps = state => {
-  console.log(state);
+  // console.log(state);
   return { libraries: state.libraries };
 };
 
