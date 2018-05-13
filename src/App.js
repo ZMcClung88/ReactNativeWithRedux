@@ -9,7 +9,8 @@ import LibraryList from './components/LibraryList';
 const App = () => {
   return (
     <Provider store={createStore(reducers)}>
-      <View>
+      {/* vvv style prevents scrolling from being cut off half page */}
+      <View style={{ flex: 1 }}>
         <Header headerText="Tech Stack" />
         <LibraryList />
       </View>
