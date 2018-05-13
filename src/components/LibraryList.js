@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
 import { connect } from 'react-redux';
+import LIstItem from './ListItem';
 
 class LibraryList extends Component {
   componentWillMount() {
@@ -8,8 +9,14 @@ class LibraryList extends Component {
       rowHasChanged: (r1, r2) => r1 !== r2
     });
 
-    this.dataSource = ds.cloneWithBows(this.props.libraries);
+    this.dataSource = ds.cloneWithRows(this.props.libraries);
   }
+
+  renderRow(library) {
+    // console.log('render row', library);
+    return <LIstItem library={library} />;
+  }
+
   render() {
     return <ListView dataSource={this.dataSource} renderRow={this.renderRow} />;
   }
