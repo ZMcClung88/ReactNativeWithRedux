@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
-import { CardSection } from './common/CardSection';
-import { Text, TouchableWithoutFeedback, View } from 'react-native';
+import { Text, TouchableWithoutFeedback, View, LayoutAnimation } from 'react-native';
 import { connect } from 'react-redux';
+import { CardSection } from './common/CardSection';
 import * as actions from '../actions';
 
 class ListItem extends Component {
+  componentWillUpdate() {
+    LayoutAnimation.spring();
+  }
+
   renderDescription() {
     const { library, expanded } = this.props;
 
     if (expanded) {
-      return <Text>{library.description}</Text>;
+      return (
+        <CardSection>
+          <Text style={{ flex: 1 }}>{library.description}</Text>
+        </CardSection>
+      );
     }
   }
 
@@ -34,6 +42,10 @@ const styles = {
   titleStyle: {
     fontSize: 18,
     paddingLeft: 15
+  },
+  descriptionStyle: {
+    paddingLeft: 10,
+    paddingRight: 10
   }
 };
 
