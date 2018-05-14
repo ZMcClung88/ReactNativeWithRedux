@@ -11,11 +11,12 @@ class ListItem extends Component {
 
   renderDescription() {
     const { library, expanded } = this.props;
+    const { descriptionStyle } = styles;
 
     if (expanded) {
       return (
         <CardSection>
-          <Text style={{ flex: 1 }}>{library.description}</Text>
+          <Text style={descriptionStyle}>{library.description}</Text>
         </CardSection>
       );
     }
@@ -44,8 +45,11 @@ const styles = {
     paddingLeft: 15
   },
   descriptionStyle: {
-    paddingLeft: 10,
-    paddingRight: 10
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 10,
+    paddingBottom: 10,
+    flex: 1
   }
 };
 
